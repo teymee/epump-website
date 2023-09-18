@@ -1,0 +1,1 @@
+export const widthStyle = "w-[85%] mx-auto"
