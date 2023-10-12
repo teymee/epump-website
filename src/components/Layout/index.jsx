@@ -4,13 +4,10 @@ import Footer from "./Footer";
 
 export default function Layout({ children }) {
   return (
-    <section>
-      <section className="relative">
-        <Navbar />
-        <section className="absolute top-[4.4rem] w-full">{children}</section>
-
-        <Footer />
-      </section>
+    <section className="">
+      <Navbar />
+      <section className=" pt-[2rem] w-full">{children}</section>
+      <Footer />
     </section>
   );
 }

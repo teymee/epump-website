@@ -16,7 +16,7 @@ export default function Navbar() {
           <img src={logo} alt="Epump logo" />
         </div>
 
-        <div className="flex justify-between ">
+        <div className="flex justify-between text-sm ">
           <p className="mr-10 cursor-pointer">About</p>
 
           <div className="flex items-center mr-10 cursor-pointer">
@@ -40,7 +40,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        <div className="border-[1px] border-[var(--grey100)] rounded-full items-center flex px-4 py-1">
+        <div className="border-[1px] border-[var(--grey100)] rounded-full items-center flex px-4 py-1 text-sm">
           <button>Login</button>
 
           <img src={rightArrow} alt="Login" className="w-4 mt-1 ml-2" />
