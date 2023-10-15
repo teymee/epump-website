@@ -8,13 +8,15 @@ export default function HomeFAQ() {
     <section className="">
       <section className={`${widthStyle} py-20 `}>
         <div className="text-center">
-          <h1 className="text-4xl font-medium ">Frequently asked questions</h1>
-          <p className="text-[var(--grey200)] font-[300] my-2     ">
+          <h1 className=" font-medium   lg:text-4xl text-2xl text-center lg:text-left">
+            Frequently asked questions
+          </h1>
+          <p className="text-[var(--grey200)] font-[300] my-2   lg:text-lg text-sm  ">
             Everything you need to know about the product and services.
           </p>
         </div>
 
-        <div className="w-[80%] mx-auto my-20">
+        <div className="lg:w-[80%] w-full mx-auto lg:my-20 my-10">
           <FAQCard />
           <FAQCard />
           <FAQCard />

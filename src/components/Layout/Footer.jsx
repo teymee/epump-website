@@ -10,61 +10,69 @@ export default function Footer() {
   return (
     <section className="bg-[var(--black700)]  w-full">
       <section className={`${widthStyle} py-20 text-white`}>
-        <section className="border-b border-[var(--grey500)] pb-20">
-          <h1 className="text-5xl text-center text-[var(--grey400)]">
+        <section className="border-b border-[var(--grey500)] lg:pb-20 pb-10">
+          <h1 className=" text-center text-[var(--grey400)] lg:text-5xl text-2xl">
             Automate your Fuel Station <br /> with us Today.
           </h1>
 
-          <p className="w-[50%] mx-auto text-center mt-8">
+          <p className=" mx-auto text-center mt-8 lg:w-[50%] w-full lg:text-lg text-sm">
             With Epump, you can monitor, control, and grow your business while
             reducing theft, fraud and revenue leakage.
           </p>
 
           <div className="flex justify-center mt-8">
-            <button className=" border border-[var(--grey100)] text-white py-4 px-10 mr-8 text-sm rounded-full">
+            <button className=" border border-[var(--grey100)] text-white py-4 px-10 lg:mr-8 text-sm rounded-full">
               Contact Us
             </button>
           </div>
         </section>
 
-        <section className="grid grid-cols-6 my-8">
-          <div>
-            <img src={whiteLogo} alt="epump logo" />
+        <section className="grid  my-8 lg:grid-cols-6 grid-cols-1 lg:text-left text-center">
+          <div className="flex flex-col mb-4  justify-center">
+            <div className="flex justify-center">
+              <img src={whiteLogo} alt="epump logo" />
+            </div>
 
-            <img src={appStore} alt="get epump on app store" className="mt-4" />
+            <div className="  mt-4 lg:mt-0 flex lg:flex-col flex-row justify-center lg:justify-start items-center gap-x-4">
+              <img
+                src={appStore}
+                alt="get epump on app store"
+                className="mt-4 "
+              />
 
-            <img
-              src={appleStore}
-              alt="get epump on apple store"
-              className="mt-4"
-            />
+              <img
+                src={appleStore}
+                alt="get epump on apple store"
+                className="mt-4"
+              />
+            </div>
           </div>
-          <div>
-            <h5 className="font-semibold">Company</h5>
+          <div className="my-10 lg-my-0">
+            <h5 className="font-semibold ">Company</h5>
             <p className="mt-4 text-sm">About us</p>
             <p className="mt-4 text-sm">Privacy policy</p>
           </div>
-          <div>
+          <div className="my-10 lg-my-0">
             {" "}
             <h5 className="font-semibold">Product</h5>
             <p className="mt-4 text-sm">ATG</p>
             <p className="mt-4 text-sm">Epump GO</p>
           </div>
-          <div>
+          <div className="my-10 lg-my-0">
             {" "}
             <h5 className="font-semibold">Support</h5>
             <p className="mt-4 text-sm">Blog</p>
             <p className="mt-4 text-sm">Help</p>
           </div>
 
-          <div>
+          <div className="my-10 lg-my-0">
             <h5 className="font-semibold">Contact Us</h5>
             <p className="mt-4 text-sm"> Info@epump.africa</p>
             <p className="mt-4 text-sm">+234 800 000 000</p>
             <p className="mt-4 text-sm"> Info@epump.africa</p>
             <p className="mt-4 text-sm">+234 800 000 000</p>
           </div>
-          <div>
+          <div className="my-10 lg-my-0">
             {" "}
             <h5 className="font-semibold">Contact Us</h5>
             <div>
