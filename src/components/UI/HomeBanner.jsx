@@ -9,6 +9,24 @@ import NNPC from "./NNPC";
 
 export default function Banner3() {
   const [company, setCompany] = useState(1);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  // const [screenHeight, setScreenHeight] = useState(window.innerHeight);
+
+  // Use the useEffect hook to update the screen width and height when the window is resized
+  useEffect(() => {
+    function handleResize() {
+      setScreenWidth(window.innerWidth);
+      // setScreenHeight(window.innerHeight);
+    }
+
+    // Add an event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     const switchCompany = setInterval(() => {
@@ -23,18 +41,33 @@ export default function Banner3() {
       clearInterval(switchCompany);
     };
   }, [company]);
- 
+
+  console.log(screenWidth)
 
   const mountedStyle = { animation: "inAnimation 600ms ease-in" };
   const unmountedStyle = {
     animation: "outAnimation 600ms ease-out",
     animationFillMode: "forwards",
   };
+  let width;
+  let height;
+
+  if (screenWidth > 800) {
+    width = "572";
+    height = "600";
+  } else if (screenWidth < 800 && screenWidth > 767) {
+    width = "472";
+    height = "500";
+  } else if (screenWidth < 767) {
+    width = "372";
+    height = "400";
+  }
+
   return (
     <svg
-      // className="flex justify-center bg-green-600"
-      width="572"
-      height="600"
+      className="flex justify-center ml-[-35px] lg:ml-[0]"
+      width={width}
+      height={height}
       viewBox="-2 -10 520 700"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

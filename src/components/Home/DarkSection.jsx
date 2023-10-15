@@ -32,22 +32,27 @@ export default function DarkSection() {
     <section className="bg-[var(--black900)]">
       <section className={`${widthStyle} py-20`}>
         <div className="text-white">
-          <h1 className="text-4xl leading-normal w-[60%] text-center mx-auto my-4">
+          <h1 className=" leading-normal text-center mx-auto my-4 lg:w-[60%] w-[95%] mx-auto lg:text-4xl text-2xl">
             Your Fuel Station Optimization Partner in Africa
           </h1>
 
-          <p className="w-[50%] text-center mx-auto my-4">
+          <p className=" text-center mx-auto my-4 lg:w-[50%] w-full mx-auto">
             Our innovative and user-friendly fuel station automation system
             helps you easily manage your fuel station operations from anywhere,
             anytime.{" "}
           </p>
         </div>
 
-        <div className="grid items-center grid-cols-3 gap-8 mt-10 text-white">
+        <div className="grid items-center  lg:gap-8 mt-10 text-white lg:grid-cols-3 grid-cols-1">
           {gridDiv.map((el) => {
             return (
-              <div className="my-20" key={el.title}>
-                <img src={el.icon} alt={el.title} />
+              <div
+                className="lg:my-20 my-8 text-center lg:text-left"
+                key={el.title}
+              >
+                <div className="flex justify-center lg:justify-start">
+                  <img src={el.icon} alt={el.title} />
+                </div>
                 <h3 className="my-4 text-lg font-semibold">{el.title}</h3>
                 <p className="text-sm leading-normal w-[95%]">{el.desc}</p>
               </div>
@@ -55,23 +60,29 @@ export default function DarkSection() {
           })}
         </div>
 
-        <div className="flex items-center justify-between my-10 text-sm text-white">
+        <div className="flex items-center justify-between my-10 text-sm text-white flex-col lg:flex-row">
           <div>
-            <h2 className="text-2xl font-semibold">Simple Automation with <br/> no Downtime</h2>
-            <p className="w-[70%] my-4 leading-loose ">
+            <h2 className=" font-semibold text-center lg:text-left lg:text-2xl text-lg">
+              Simple Automation with <br /> no Downtime
+            </h2>
+            <p className=" my-4 lg:leading-loose  text-center lg:text-left lg:w-[70%] w-[95%] mx-auto lg:ml-0 ">
               The following types of data can be gathered from the the Epump Go
               dashboard
             </p>
 
-            <ul className="mt-4 ml-4 list-disc">
+            <ul className="mt-8 ml-4 list-disc">
               <li>Remote Monitoring</li>
-              <li className="my-2">Remote Monitoring</li>
+              <li className="my-4">Simple automation & zero downtime</li>
               <li>Remote Monitoring</li>
             </ul>
           </div>
 
           <div>
-            <img src={feature} alt="Product features" className="h-[450px] w-full"/>
+            <img
+              src={feature}
+              alt="Product features"
+              className="h-[450px] w-full"
+            />
           </div>
         </div>
       </section>
