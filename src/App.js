@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ATG from "./pages/Products/ATG";
+import Pump from "./pages/Products/Pump";
 
 function App() {
   return (
@@ -26,6 +27,10 @@ function App() {
 
         <Routes>
           <Route element={<ATG />} path="/ATG" />
+        </Routes>
+
+        <Routes>
+          <Route element={<Pump />} path="/Pump" />
         </Routes>
       </BrowserRouter>
     </>
