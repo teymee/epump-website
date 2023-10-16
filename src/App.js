@@ -6,6 +6,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import ATG from "./pages/Products/ATG";
 
 function App() {
   return (
@@ -21,6 +22,10 @@ function App() {
 
         <Routes>
           <Route element={<Contact />} path="/contact" />
+        </Routes>
+
+        <Routes>
+          <Route element={<ATG />} path="/ATG" />
         </Routes>
       </BrowserRouter>
     </>
