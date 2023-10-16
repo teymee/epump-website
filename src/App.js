@@ -1,16 +1,29 @@
+import "./App.css";
 
-import './App.css';
-import Layout from './components/Layout';
-import Footer from './components/Layout/Footer';
-import Home from './pages/Home';
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+
+//components
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
-   <>
-   <Home/>
-   
-  
-   </>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route element={<Home />} path="/" />
+        </Routes>
+
+        <Routes>
+          <Route element={<About />} path="/about" />
+        </Routes>
+
+        <Routes>
+          <Route element={<Contact />} path="/contact" />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
