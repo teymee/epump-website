@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ATG from "./pages/Products/ATG";
 import Pump from "./pages/Products/Pump";
+import EpumpGo from "./pages/Products/EpumpGo";
 
 function App() {
   return (
@@ -31,6 +32,10 @@ function App() {
 
         <Routes>
           <Route element={<Pump />} path="/Pump" />
+        </Routes>
+
+        <Routes>
+          <Route element={<EpumpGo />} path="/epumpGo" />
         </Routes>
       </BrowserRouter>
     </>

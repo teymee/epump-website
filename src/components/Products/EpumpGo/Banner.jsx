@@ -4,10 +4,10 @@ import React from "react";
 
 import { widthStyle } from "../../../utils/generalStyle";
 
-//assets
-import pump from "../../../assets/svg/pump.svg";
+//asssets
+import epumpGo from "../../../assets/svg/epumpGo.svg";
 
-export default function PumpBanner() {
+export default function GOBanner() {
   return (
     <section className="bg-[var(--grey300)]">
       <section
@@ -15,16 +15,16 @@ export default function PumpBanner() {
       >
         <div>
           <div className="flex justify-center lg:justify-start">
-            <div className="bg-[var(--purple100)] w-[11rem] rounded-md py-2 text-center ">
+            <div className="bg-[var(--purple100)] w-[6rem] rounded-md py-2 text-center ">
               <p className="text-[var(--purple600)] text-sm font-semibold">
-              Rectar pump
+              Epump GO
               </p>
             </div>
           </div>
 
           <div className="text-center lg:text-left">
             <h1 className=" my-5 lg:text-[37px] text-2xl font-bold lg:leading-[52px] lg:w-[90%]">
-              Measuring your stock level accurately.
+            A one-in- class forecourt controller
             </h1>
 
             <p className="my-5] text-sm  w-full lg:w-[70%]">
@@ -32,7 +32,7 @@ export default function PumpBanner() {
               reducing theft, fraud and revenue leakage.
             </p>
 
-            <div className={`my-5 `}>
+            <div className={`my-10 `}>
               <button className="bg-[var(--purple600)] text-white lg:py-4 lg:px-10 py-3 px-8 lg:mr-8 text-sm rounded-full">
                 Contact Us
               </button>
@@ -41,8 +41,12 @@ export default function PumpBanner() {
         </div>
 
         <div>
-          <div >
-            <img src={pump} alt="Pump" className="lg:mb-[-200px] lg:mt-0 mt-20 mb-[-90px] lg:w-full w-[80%] mx-auto"/>
+          <div>
+            <img
+              src={epumpGo}
+              alt="Epump Go"
+              className="    w-[90%] mx-auto"
+            />
           </div>
         </div>
       </section>

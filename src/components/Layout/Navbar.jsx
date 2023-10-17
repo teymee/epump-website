@@ -5,6 +5,7 @@ import logo from "../../assets/svg/logo.svg";
 import rightArrow from "../../assets/svg/rightArrow.svg";
 import dropdown from "../../assets/svg/dropdown.svg";
 import { widthStyle } from "../../utils/generalStyle";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
@@ -17,7 +18,9 @@ export default function Navbar() {
         </div>
 
         <div className="flex justify-between text-sm ">
-          <p className="mr-10 cursor-pointer">About</p>
+          <NavLink to="/about">
+            <p className="mr-10 cursor-pointer">About</p>
+          </NavLink>
 
           <div className="flex items-center mr-10 cursor-pointer">
             <p>Product</p>

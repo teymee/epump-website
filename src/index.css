@@ -15,8 +15,11 @@
   --grey600: #4b4b4b;
   --grey700: #686868;
   --grey800: #2c2c2c;
+  --grey900: #5a5a5a;
+
   --purple100: #efe6fd;
   --purple600: #46266e;
+  --purple700:#091135;
 }
 
 body {
