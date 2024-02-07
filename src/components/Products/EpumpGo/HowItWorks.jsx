@@ -28,12 +28,12 @@ export default function HowItWorks() {
                 Data you can effortlessly get while using Epump Go
               </h1>
 
-              <p className="my-4 font-semibold text-[var(--grey900)]  text-sm  w-full lg:w-[80%]">
+              <p className="my-4 font-semibold text-grey900  text-sm  w-full lg:w-[80%]">
                 The following types of data can be gathered from the the Epump
                 Go dashboard
               </p>
 
-              <ul className=" text-sm list-disc marker:text-[#d9d9d9] marker:w-40 leading-loose ml-4 font-semibold text-[var(--grey900)]">
+              <ul className=" text-sm list-disc marker:text-[#d9d9d9] marker:w-40 leading-loose ml-4 font-semibold text-grey900">
                 <li>Volume of products sold</li>
                 <li>Products levels in tanks</li>
                 <li>Sales by cash, POS, Credit</li>

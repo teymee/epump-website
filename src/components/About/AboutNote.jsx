@@ -33,10 +33,10 @@ export default function AboutNote() {
       <section className={`${widthStyle} py-20 `}>
         <div className="flex flex-col items-center justify-between lg:flex-row">
           <div className="lg:w-[40%] lg:text-left text-center">
-            <h1 className="text-[var(--black700)] text-4xl font-medium mb-4">
+            <h1 className="mb-4 text-4xl font-medium text-black700">
               About us
             </h1>
-            <p className="text-[var(--black700)] ">
+            <p className="text-black700 ">
               Epump is a leading automation and solution development company
               operating in Africa. The company was born out of a need to fill
               the gap in the provision of top-notch automation and software
@@ -69,7 +69,7 @@ export default function AboutNote() {
                   </div>
                 </div>
 
-                <h3 className="mt-6 text-center text-[var(--purple700)] font-medium">
+                <h3 className="mt-6 text-center text-purple700 font-medium">
                   {el.title}
                 </h3>
 

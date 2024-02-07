@@ -8,16 +8,16 @@ import team3 from "../../assets/svg/team3.svg";
 
 export default function Team() {
   return (
-    <section className="bg-[var(--grey300)]">
+    <section className="bg-grey300">
       <section className={`${widthStyle} py-20 `}>
-        <div className="flex justify-between ">
-          <div className="w-[40%]">
-            <h2 className="text-3xl w-[90%] font-medium">
+        <div className="flex flex-col justify-between text-center lg:text-left lg:flex-row ">
+          <div className="lg:w-[40%] ">
+            <h2 className="lg:text-3xl text-2xl lg:w-[90%] font-medium">
               We don't just work, we have fun too
             </h2>
           </div>
 
-          <div className="w-[50%]">
+          <div className=" lg:w-[50%] lg:mt-0 mt-4">
             <p>
               We are a team of engineers, entrepreneurs, designers and artists
               working together with a singular mission of building a new and
@@ -40,7 +40,7 @@ export default function Team() {
 
         <div>
           <h1 className="text-4xl text-center">Join Epump</h1>
-          <p className="w-[50%] mx-auto text-center my-4">
+          <p className="lg:w-[50%] mx-auto text-center my-4">
             We aspire to be the change we want to see in the world, which is why
             we’re committed to building a diverse and inclusive team at Epump We
             welcome and encourage candidates of all backgrounds to apply.{" "}

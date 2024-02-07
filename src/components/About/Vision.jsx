@@ -29,10 +29,10 @@ export default function Vision() {
           </div>
 
           <div className="lg:w-[40%] text-center lg:text-left">
-            <h1 className="text-[var(--black700)] text-4xl font-medium mb-4">
+            <h1 className="text-black700 text-4xl font-medium mb-4">
               Our Vision
             </h1>
-            <p className="text-[var(--black700)] ">
+            <p className="text-black700 ">
               Epump is a leading automation and solution development company
               operating in Africa. The company was born out of a need to fill
               the gap in the provision of top-notch automation and software

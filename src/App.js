@@ -9,6 +9,7 @@ import Contact from "./pages/Contact";
 import ATG from "./pages/Products/ATG";
 import Pump from "./pages/Products/Pump";
 import EpumpGo from "./pages/Products/EpumpGo";
+import FAQ from "./pages/FAQ";
 
 function App() {
   return (
@@ -36,6 +37,10 @@ function App() {
 
         <Routes>
           <Route element={<EpumpGo />} path="/epumpGo" />
+        </Routes>
+
+        <Routes>
+          <Route element={<FAQ />} path="/faq" />
         </Routes>
       </BrowserRouter>
     </>

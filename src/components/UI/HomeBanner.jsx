@@ -42,8 +42,7 @@ export default function Banner3() {
     };
   }, [company]);
 
-  console.log(screenWidth)
-
+  
   const mountedStyle = { animation: "inAnimation 600ms ease-in" };
   const unmountedStyle = {
     animation: "outAnimation 600ms ease-out",

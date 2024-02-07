@@ -10,7 +10,7 @@ export default function ContactForm() {
 
             <input
               placeholder="Station name"
-              className="w-full border border-[var(--grey500)] bg-[var(--grey400)] pl-2 py-2 rounded mt-2 placeholder:text-sm"
+              className="w-full border border-grey500 bg-grey400 pl-2 py-2 rounded mt-2 placeholder:text-sm"
             />
           </div>
 
@@ -19,7 +19,7 @@ export default function ContactForm() {
 
             <input
               placeholder="example@email.com"
-              className=" w-full border border-[var(--grey500)] bg-[var(--grey400)] pl-2 py-2 rounded mt-2 placeholder:text-sm"
+              className=" w-full border border-grey500 bg-grey400 pl-2 py-2 rounded mt-2 placeholder:text-sm"
             />
           </div>
         </div>
@@ -30,7 +30,7 @@ export default function ContactForm() {
 
             <input
               placeholder="Contact person’s name"
-              className="w-full border-[1px] border-[var(--grey500)] bg-[var(--grey400)] pl-2 py-2 rounded mt-2 placeholder:text-sm"
+              className="w-full border-[1px] border-grey500 bg-grey400 pl-2 py-2 rounded mt-2 placeholder:text-sm"
             />
           </div>
 
@@ -39,7 +39,7 @@ export default function ContactForm() {
 
             <input
               placeholder="Station address"
-              className=" w-full border border-[var(--grey500)] bg-[var(--grey400)] pl-2 py-2 rounded mt-2 placeholder:text-sm"
+              className=" w-full border border-grey500 bg-grey400 pl-2 py-2 rounded mt-2 placeholder:text-sm"
             />
           </div>
         </div>
@@ -50,7 +50,7 @@ export default function ContactForm() {
 
             <input
               placeholder="Phone number"
-              className="w-full border-[1px] border-[var(--grey500)] bg-[var(--grey400)] pl-2 py-2 rounded mt-2 placeholder:text-sm"
+              className="w-full border-[1px] border-grey500 bg-grey400 pl-2 py-2 rounded mt-2 placeholder:text-sm"
             />
           </div>
 
@@ -59,7 +59,7 @@ export default function ContactForm() {
 
             <input
               placeholder="Number of fuel pumps"
-              className=" w-full border border-[var(--grey500)] bg-[var(--grey400)] pl-2 py-2 rounded mt-2 placeholder:text-sm"
+              className=" w-full border border-grey500 bg-grey400 pl-2 py-2 rounded mt-2 placeholder:text-sm"
             />
           </div>
         </div>
@@ -70,7 +70,7 @@ export default function ContactForm() {
 
             <input
               placeholder="Pump model"
-              className="w-full border-[1px] border-[var(--grey500)] bg-[var(--grey400)] pl-2 py-2 rounded mt-2 placeholder:text-sm"
+              className="w-full border-[1px] border-grey500 bg-grey400 pl-2 py-2 rounded mt-2 placeholder:text-sm"
             />
           </div>
 
@@ -79,7 +79,7 @@ export default function ContactForm() {
 
             <input
               placeholder="Number of tanks"
-              className=" w-full border border-[var(--grey500)] bg-[var(--grey400)] pl-2 py-2 rounded mt-2 placeholder:text-sm"
+              className=" w-full border border-grey500 bg-grey400 pl-2 py-2 rounded mt-2 placeholder:text-sm"
             />
           </div>
         </div>
@@ -91,7 +91,7 @@ export default function ContactForm() {
             <textarea
               rows={3}
               placeholder="Give as much details as possible..."
-              className="w-full border-[1px] border-[var(--grey500)] bg-[var(--grey400)] pl-2 py-2 rounded mt-2 placeholder:text-sm"
+              className="w-full border-[1px] border-grey500 bg-grey400 pl-2 py-2 rounded mt-2 placeholder:text-sm"
             ></textarea>
           </div>
         </div>

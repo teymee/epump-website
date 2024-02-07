@@ -29,7 +29,7 @@ export default function DarkSection() {
   ];
 
   return (
-    <section className="bg-[var(--black900)]">
+    <section className="bg-black900">
       <section className={`${widthStyle} py-20`}>
         <div className="text-white">
           <h1 className=" leading-normal text-center mx-auto my-4 lg:w-[60%] w-[95%] mx-auto lg:text-4xl text-2xl">
@@ -43,11 +43,11 @@ export default function DarkSection() {
           </p>
         </div>
 
-        <div className="grid items-center  lg:gap-8 mt-10 text-white lg:grid-cols-3 grid-cols-1">
+        <div className="grid items-center grid-cols-1 mt-10 text-white lg:gap-8 lg:grid-cols-3">
           {gridDiv.map((el) => {
             return (
               <div
-                className="lg:my-20 my-8 text-center lg:text-left"
+                className="my-8 text-center lg:my-20 lg:text-left"
                 key={el.title}
               >
                 <div className="flex justify-center lg:justify-start">
@@ -60,9 +60,9 @@ export default function DarkSection() {
           })}
         </div>
 
-        <div className="flex items-center justify-between my-10 text-sm text-white flex-col lg:flex-row">
+        <div className="flex flex-col items-center justify-between my-10 text-sm text-white lg:flex-row">
           <div>
-            <h2 className=" font-semibold text-center lg:text-left lg:text-2xl text-lg">
+            <h2 className="text-lg font-semibold text-center  lg:text-left lg:text-2xl">
               Simple Automation with <br /> no Downtime
             </h2>
             <p className=" my-4 lg:leading-loose  text-center lg:text-left lg:w-[70%] w-[95%] mx-auto lg:ml-0 ">

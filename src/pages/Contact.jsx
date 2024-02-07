@@ -18,14 +18,14 @@ export default function Contact() {
             backgroundRepeat: "no-repeat, no-repeat",
             backgroundPosition: " 100% 70%,  1% 60%",
           }}
-          className="bg-[var(--grey300)]"
+          className="bg-grey300"
         >
           <section className={`${widthStyle} py-20 `}>
             <div className="text-center">
-              <h1 className="text-lg lg:text-2xl my-4 font-medium">
+              <h1 className="my-4 text-lg font-medium lg:text-2xl">
                 Contact us
               </h1>
-              <p className="text-[var(--black700)]">
+              <p className="text-black700">
                 Send us a message, and we'll respond to you shortly.
               </p>
             </div>

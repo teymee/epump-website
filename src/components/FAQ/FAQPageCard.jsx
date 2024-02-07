@@ -3,7 +3,7 @@ import React, { useState } from "react";
 //assets
 import { AiOutlineMinusCircle, AiOutlinePlusCircle } from "react-icons/ai";
 
-export default function FAQCard() {
+export default function FAQPageCard() {
   //usestates
   const [isOpen, setIsOpen] = useState(false);
 
@@ -12,8 +12,8 @@ export default function FAQCard() {
   };
 
   return (
-    <div className="border-t px-2 py-6" onClick={openDropdown}>
-      <div className="flex  items-center justify-between">
+    <div className="px-2 py-6 border-t" onClick={openDropdown}>
+      <div className="flex items-center justify-between">
         <p className=" font-medium text-black700">
           Can I change my plan later?
         </p>

@@ -5,7 +5,7 @@ import { BsFillArrowRightCircleFill } from "react-icons/bs";
 
 export default function Blog() {
   return (
-    <section className="bg-[var(--grey300)]">
+    <section className="bg-grey300">
       <section className={`${widthStyle} py-8 `}>
         <div className="w-full pb-2 lg:border-b">
           <h1 className="font-medium   lg:text-4xl text-2xl text-center lg:text-left">From the blog</h1>

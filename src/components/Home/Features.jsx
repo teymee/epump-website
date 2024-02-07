@@ -33,7 +33,7 @@ export default function Features() {
           <h1 className=" font-medium lg:text-4xl text-2xl text-center lg:text-left">
             Features & Benefits
           </h1>
-          <p className="text-[var(--black700)] lg:text-[var(--grey200)] lg:font-[300]  font-normal my-2 lg:w-[40%] w-full text-center lg:text-left text-sm lg:text-lg mb-10 lg:mb-0">
+          <p className="text-black700 lg:text-grey200 lg:font-[300]  font-normal my-2 lg:w-[40%] w-full text-center lg:text-left text-sm lg:text-lg mb-10 lg:mb-0">
             With Epump, you can monitor, control, and grow your business while
             reducing theft, fraud and revenue leakage.
           </p>
@@ -44,10 +44,10 @@ export default function Features() {
             {gridDiv.map((el) => {
               return (
                 <div
-                  className="text-[var(--grey600)] font-[300] text-center lg:text-left"
+                  className="text-grey600 font-[300] text-center lg:text-left"
                   key={el.title}
                 >
-                  <h2 className=" text-sm text-[var(--grey600)] font-semibold lg:my-4 my-2">
+                  <h2 className=" text-sm text-grey600 font-semibold lg:my-4 my-2">
                     {el.title}
                   </h2>
                   <p className="lg:text-sm text-xs leading-normal w-[90%] lg:w-full mx-auto ">

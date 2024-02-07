@@ -8,11 +8,11 @@ import about3 from "../../assets/svg/about3.svg";
 
 export default function AboutBanner() {
   return (
-    <section className="bg-[var(--grey300)] pt-10">
+    <section className="bg-grey300 pt-10">
       <section className={`${widthStyle} py-8 `}>
         <div>
           <div className="justify-center lg:justify-start">
-            <div className="bg-[var(--purple100)] w-[7rem] mx-auto lg:ml-0 rounded-md py-2 text-center ">
+            <div className="bg-purple100 w-[7rem] mx-auto lg:ml-0 rounded-md py-2 text-center ">
               <p className="text-[var(--purple600)] text-sm font-semibold">
                 About Epump
               </p>

@@ -8,10 +8,10 @@ import appStore from "../../assets/svg/appleStore.svg";
 
 export default function Footer() {
   return (
-    <section className="bg-[var(--black700)]  w-full">
+    <section className="bg-black700  w-full">
       <section className={`${widthStyle} py-20 text-white`}>
-        <section className="border-b border-[var(--grey500)] lg:pb-20 pb-10">
-          <h1 className=" text-center text-[var(--grey400)] lg:text-5xl text-2xl">
+        <section className="border-b border-grey500 lg:pb-20 pb-10">
+          <h1 className=" text-center text-grey400 lg:text-5xl text-2xl">
             Automate your Fuel Station <br /> with us Today.
           </h1>
 
@@ -21,7 +21,7 @@ export default function Footer() {
           </p>
 
           <div className="flex justify-center mt-8">
-            <button className=" border border-[var(--grey100)] text-white py-4 px-10 lg:mr-8 text-sm rounded-full">
+            <button className=" border border-grey100 text-white py-4 px-10 lg:mr-8 text-sm rounded-full">
               Contact Us
             </button>
           </div>

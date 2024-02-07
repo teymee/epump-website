@@ -7,11 +7,11 @@ import epumpGo from "../../assets/svg/epumpGo.svg";
 
 export default function OurProducts() {
   return (
-    <section className="bg-[var(--grey300)]">
+    <section className="bg-grey300">
       <section className={`${widthStyle} py-20 `}>
         <section>
           <h1 className="text-4xl font-medium ">Our Products</h1>
-          <p className="text-[var(--grey200)] font-[300] my-2 w-[40%]">
+          <p className="text-grey200 font-[300] my-2 w-[40%]">
             Showcasing some of the interesting products experiences powered by
             Epump
           </p>
@@ -26,19 +26,19 @@ export default function OurProducts() {
 
             <div className="flex items-center mb-2 cursor-pointer gap-x-4 ">
               {/* <div className="w-2 h-2 mt-1 bg-black rounded-full"></div> */}
-              <p className="ml-6 text-[var(--grey200)] opacity-25">
+              <p className="ml-6 text-grey200 opacity-25">
                 Automatic Tank Gauge(ATG)
               </p>
             </div>
 
             <div className="flex items-center mb-2 cursor-pointer gap-x-4 ">
               {/* <div className="w-2 h-2 mt-1 bg-black rounded-full"></div> */}
-              <p className="ml-6 text-[var(--grey200)] opacity-25">Rectar</p>
+              <p className="ml-6 text-grey200 opacity-25">Rectar</p>
             </div>
 
             <div className="flex items-center mb-2 cursor-pointer gap-x-4 ">
               {/* <div className="w-2 h-2 mt-1 bg-black rounded-full"></div> */}
-              <p className="ml-6 text-[var(--grey200)] opacity-25">Payments</p>
+              <p className="ml-6 text-grey200 opacity-25">Payments</p>
             </div>
           </div>
 

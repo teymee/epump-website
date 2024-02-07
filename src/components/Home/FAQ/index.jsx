@@ -11,7 +11,7 @@ export default function HomeFAQ() {
           <h1 className=" font-medium   lg:text-4xl text-2xl text-center lg:text-left">
             Frequently asked questions
           </h1>
-          <p className="text-[var(--grey200)] font-[300] my-2   lg:text-lg text-sm  ">
+          <p className="text-grey200 font-[300] my-2   lg:text-lg text-sm  ">
             Everything you need to know about the product and services.
           </p>
         </div>

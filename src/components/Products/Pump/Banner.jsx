@@ -9,13 +9,13 @@ import pump from "../../../assets/svg/pump.svg";
 
 export default function PumpBanner() {
   return (
-    <section className="bg-[var(--grey300)]">
+    <section className="bg-grey300">
       <section
         className={`${widthStyle}  py-8 flex flex-col  lg:flex-row justify-between  items-center lg:h-screen overflow-y-hidden`}
       >
         <div>
           <div className="flex justify-center lg:justify-start">
-            <div className="bg-[var(--purple100)] w-[11rem] rounded-md py-2 text-center ">
+            <div className="bg-purple100 w-[11rem] rounded-md py-2 text-center ">
               <p className="text-[var(--purple600)] text-sm font-semibold">
               Rectar pump
               </p>
