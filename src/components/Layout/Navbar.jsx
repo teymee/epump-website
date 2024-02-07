@@ -29,7 +29,7 @@ export default function Navbar() {
     <>
       {ready && <PageTransition />}
       {!ready && (
-        <nav className="bg-grey300  fixed w-full z-30 ">
+        <nav className="fixed z-30 w-full bg-grey300 ">
           <section
             className={`${widthStyle}  h-[4.375rem] flex justify-between items-center`}
           >
@@ -64,12 +64,12 @@ export default function Navbar() {
                   />
                 </div>
 
-                <div className="text-center shadow productDropdown">
+                {/* <div className="text-center shadow productDropdown">
 
                   <p>ATG</p>
                   <p>Epump GO</p>
                   <p>Epump Prime</p>
-                </div>
+                </div> */}
               </div>
 
               <p className="mr-10 cursor-pointer">Blog</p>

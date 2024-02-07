@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
+
+//utils
 import { widthStyle } from "../../utils/generalStyle";
 
 //assets
-import banner from "../../assets/svg/banner.svg";
 import HomeBanner from "../UI/HomeBanner";
-import Banner2 from "../UI/Banner2";
-import Banner3 from "../UI/Banner3";
 
 export default function Banner() {
   const [company, setCompany] = useState(0);
@@ -23,33 +22,32 @@ export default function Banner() {
       clearInterval(switchCompany);
     };
   }, [company]);
-  // console.log(company);
   return (
-    <section className="bg-grey300 py-10">
+    <section className="py-12 lg:py-4 bg-grey300">
       <section
-        className={`${widthStyle} py-8 flex flex-col  lg:flex-row justify-between  items-center`}
+        className={`${widthStyle} py-8 flex flex-col  lg:flex-row justify-between  items-center `}
       >
         <div>
           <div className="flex justify-center lg:justify-start">
             <div className="bg-purple100 w-[11rem] rounded-md py-2 text-center ">
-              <p className="text-sm font-semibold text-purple600">
+              <p className="text-sm font-semibold text-purple600 font-satoshi">
                 For fuel station owners
               </p>
             </div>
           </div>
 
-          <div className="text-center lg:text-left">
-            <h1 className=" my-5 lg:text-[37px] text-2xl font-bold lg:leading-[52px] lg:w-[90%]">
-              The Fuel Station Automation System Built for You.
+          <div className="text-center lg:text-left font-satoshi">
+            <h1 className=" my-5 lg:text-[3rem] text-2xl font-bold lg:leading-[52px] lg:w-full  ">
+              The All-In-One Solution for Fuel Station Owners{" "}
             </h1>
 
-            <p className="my-5] text-sm  w-full lg:w-[70%">
+            <p className="my-5] text-sm  w-full lg:w-[70%]">
               Epump gives you real-time insights into your operations, so you
-              can make better decisions, save time, money, and resources.{" "}
+              can make better decisions, save time, money, and resources
             </p>
 
             <div className={`my-5 `}>
-              <button className="bg-[var(--purple600)] text-white lg:py-4 lg:px-10 py-3 px-8 lg:mr-8 text-sm rounded-full">
+              <button className="px-8 py-3 text-sm text-white rounded-full bg-purple600 lg:py-4 lg:px-10 lg:mr-8">
                 Contact Us
               </button>
             </div>

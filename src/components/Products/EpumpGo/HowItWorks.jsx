@@ -17,8 +17,8 @@ export default function HowItWorks() {
           </div>
 
           <div className="lg:w-[50%]">
-            <div className="flex items-center text-[var(--purple600)] ">
-              <div className="bg-[var(--purple600)] w-2 h-4 mr-2"></div>
+            <div className="flex items-center text-purple600 ">
+              <div className="bg-purple600 w-2 h-4 mr-2"></div>
 
               <div className="text-sm font-medium">Benefits</div>
             </div>
@@ -41,7 +41,7 @@ export default function HowItWorks() {
               </ul>
 
               <div className={`my-5 `}>
-                <p className=" flex items-center text-[var(--purple600)] font-medium   text-sm rounded-full">
+                <p className=" flex items-center text-purple600 font-medium   text-sm rounded-full">
                   Contact sales
                   <BsArrowRight
                     size={18}

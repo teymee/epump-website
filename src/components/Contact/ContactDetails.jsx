@@ -17,7 +17,7 @@ export default function ContactDetails() {
           backgroundPosition: " 100% 98%,  100% 103%",
        
         }}
-        className={`   lg:h-[110vh] bg-[var(--purple600)] px-4 py-10 text-white lg:rounded-l-lg `}
+        className={`   lg:h-[110vh] bg-purple600 px-4 py-10 text-white lg:rounded-l-lg `}
       >
         <div>
           <h3 className="mb-4 lg:text-2xl text-lg">Get a quote</h3>

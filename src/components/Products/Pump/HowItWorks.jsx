@@ -13,8 +13,8 @@ export default function HowItWorks() {
       >
         <div className="flex flex-col items-center justify-between lg:flex-row">
           <div className="lg:w-[50%]">
-            <div className="flex items-center text-[var(--purple600)] ">
-              <div className="bg-[var(--purple600)] w-2 h-4 mr-2"></div>
+            <div className="flex items-center text-purple600 ">
+              <div className="bg-purple600 w-2 h-4 mr-2"></div>
 
               <div className="text-sm font-medium">HOW ITS WORKS</div>
             </div>
@@ -31,7 +31,7 @@ export default function HowItWorks() {
               </p>
 
               <div className={`my-5 `}>
-                <p className=" flex items-center text-[var(--purple600)] font-medium   text-sm rounded-full">
+                <p className=" flex items-center text-purple600 font-medium   text-sm rounded-full">
                   Learn more{" "}
                   <BsArrowRight
                     size={18}

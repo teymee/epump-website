@@ -13,7 +13,7 @@ export default function AboutBanner() {
         <div>
           <div className="justify-center lg:justify-start">
             <div className="bg-purple100 w-[7rem] mx-auto lg:ml-0 rounded-md py-2 text-center ">
-              <p className="text-[var(--purple600)] text-sm font-semibold">
+              <p className="text-purple600 text-sm font-semibold">
                 About Epump
               </p>
             </div>

@@ -96,7 +96,7 @@ export default function ContactForm() {
           </div>
         </div>
 
-        <button className="bg-[var(--purple600)] rounded-full w-full py-2 text-white mt-4">
+        <button className="bg-purple600 rounded-full w-full py-2 text-white mt-4">
           Send
         </button>
       </form>

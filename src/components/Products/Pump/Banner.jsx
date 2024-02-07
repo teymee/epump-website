@@ -16,7 +16,7 @@ export default function PumpBanner() {
         <div>
           <div className="flex justify-center lg:justify-start">
             <div className="bg-purple100 w-[11rem] rounded-md py-2 text-center ">
-              <p className="text-[var(--purple600)] text-sm font-semibold">
+              <p className="text-purple600 text-sm font-semibold">
               Rectar pump
               </p>
             </div>
@@ -33,7 +33,7 @@ export default function PumpBanner() {
             </p>
 
             <div className={`my-5 `}>
-              <button className="bg-[var(--purple600)] text-white lg:py-4 lg:px-10 py-3 px-8 lg:mr-8 text-sm rounded-full">
+              <button className="bg-purple600 text-white lg:py-4 lg:px-10 py-3 px-8 lg:mr-8 text-sm rounded-full">
                 Contact Us
               </button>
             </div>

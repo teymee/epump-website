@@ -1,1 +1,1 @@
-export const widthStyle = "w-[85%] mx-auto "
+export const widthStyle = "w-[88%] mx-auto "

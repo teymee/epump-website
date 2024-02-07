@@ -47,7 +47,7 @@ export default function Team() {
           </p>
 
           <div className="flex justify-center ">
-            <button className="flex  py-1 gap-x-4 bg-[var(--purple600)] text-white rounded-full text-sm  px-4">
+            <button className="flex  py-1 gap-x-4 bg-purple600 text-white rounded-full text-sm  px-4">
               <span>See opening</span>{" "}
             </button>
           </div>

@@ -3,7 +3,7 @@ import FAQCard from "../Home/FAQ/FAQCard";
 import FAQPageCard from "./FAQPageCard";
 
 export default function FAQuestions() {
-  const active = "text-[var(--purple600)] font-medium my-3 cursor-pointer";
+  const active = "text-purple600 font-medium my-3 cursor-pointer";
   const inActive = "text-violet200 my-3 cursor-pointer";
 
   return (
@@ -15,7 +15,7 @@ export default function FAQuestions() {
       </div>
 
       <div className="block w-full my-4 lg:hidden">
-        <div className="bg-violet50 text-[var(--purple600)] py-2 px-2 font-bold rounded">
+        <div className="bg-violet50 text-purple600 py-2 px-2 font-bold rounded">
           <p className={``}>GENERAL</p>
         </div>
       </div>

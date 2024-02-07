@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         Space_Grotesk: ["Space Grotesk", "sans-serif"],
+        satoshi:['satoshi', 'san-serif']
       },
       colors: {
         black700: "#1e1e1e",
