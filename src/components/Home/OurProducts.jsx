@@ -1,11 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import { widthStyle } from "../../utils/generalStyle";
 
 //asssets
 import { BsArrowRight } from "react-icons/bs";
+import atg from "../../assets/svg/atg.svg";
+import pump from "../../assets/svg/pump.svg";
 import epumpGo from "../../assets/svg/epumpGo.svg";
 
 export default function OurProducts() {
+  const [activeTab, setActiveTab] = useState("epumpgo");
+  const products = [
+    {
+      name: "EpumpGo",
+      img: epumpGo,
+      desc: "Epump Go is a one-in-class forecourt controller, designed with the African technical and economic environment in focus. ",
+      link: "/epumpGo",
+    },
+
+    {
+      name: "Automatic Tank Gauge(ATG)",
+      img: atg,
+      desc: "Automatic Tank Gauge(ATG) is a one-in-class forecourt controller, designed with the African technical and economic environment in focus. ",
+      link: "/ATG",
+    },
+
+    {
+      name: "Rectar",
+      img: pump,
+      desc: "Rectar is a one-in-class forecourt controller, designed with the African technical and economic environment in focus. ",
+      link: "/Pump",
+    },
+
+    {
+      name: "Payment",
+      img: pump,
+      desc: "Rectar is a one-in-class forecourt controller, designed with the African technical and economic environment in focus. ",
+      link: "/Pump",
+    },
+  ];
+
+  const navs = products.map((product) => {
+    return product.name;
+  });
   return (
     <section className="bg-grey300">
       <section className={`${widthStyle} py-20 `}>
@@ -19,27 +55,22 @@ export default function OurProducts() {
 
         <section className="flex items-center my-10 flex-col lg:flex-row">
           <div className="z-20 w-[45%] text-sm">
-            <div className="flex items-center mb-4 cursor-pointer gap-x-4">
-              <div className="w-2 h-2 mt-1 bg-black rounded-full"></div>
-              <p>Epump GO</p>
-            </div>
-
-            <div className="flex items-center mb-2 cursor-pointer gap-x-4 ">
-              {/* <div className="w-2 h-2 mt-1 bg-black rounded-full"></div> */}
-              <p className="ml-6 text-grey200 opacity-25">
-                Automatic Tank Gauge(ATG)
-              </p>
-            </div>
-
-            <div className="flex items-center mb-2 cursor-pointer gap-x-4 ">
-              {/* <div className="w-2 h-2 mt-1 bg-black rounded-full"></div> */}
-              <p className="ml-6 text-grey200 opacity-25">Rectar</p>
-            </div>
-
-            <div className="flex items-center mb-2 cursor-pointer gap-x-4 ">
-              {/* <div className="w-2 h-2 mt-1 bg-black rounded-full"></div> */}
-              <p className="ml-6 text-grey200 opacity-25">Payments</p>
-            </div>
+            {navs?.map((nav, index) => {
+              return (
+                <div
+                  className={`flex items-center mb-4 cursor-pointer gap-x-4 ${
+                    activeTab === nav?.toLowerCase()
+                      ? "text-black900"
+                      : "text-grey200 opacity-25 "
+                  }`}
+                  key={index}
+                  onClick={() => setActiveTab(nav?.toLowerCase())}
+                >
+                  <div className="w-2 h-2 mt-1 bg-black rounded-full"></div>
+                  <p>{nav}</p>
+                </div>
+              );
+            })}
           </div>
 
           <div className="flex items-center flex-col lg:flex-row">

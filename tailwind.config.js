@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Space_Grotesk: ["Space Grotesk", "sans-serif"],
+        grotesk: ["Space Grotesk", "sans-serif"],
         satoshi:['satoshi', 'san-serif']
       },
       colors: {

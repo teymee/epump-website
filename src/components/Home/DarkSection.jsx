@@ -1,4 +1,6 @@
 import React from "react";
+
+//utils
 import { widthStyle } from "../../utils/generalStyle";
 
 //assets
@@ -31,60 +33,56 @@ export default function DarkSection() {
   return (
     <section className="bg-black900">
       <section className={`${widthStyle} py-20`}>
-        <div className="text-white">
-          <h1 className=" leading-normal text-center mx-auto my-4 lg:w-[60%] w-[95%] mx-auto lg:text-4xl text-2xl">
+        <section className="text-white text-center">
+          <h1 className=" leading-normal  mx-auto my-4 lg:w-[50%] w-[95%] lg:text-4xl text-2xl font-satoshi font-medium">
             Your Fuel Station Optimization Partner in Africa
           </h1>
 
-          <p className=" text-center mx-auto my-4 lg:w-[50%] w-full mx-auto">
+          <p className=" mx-auto my-4 lg:w-[50%] w-full font-grotesk">
             Our innovative and user-friendly fuel station automation system
             helps you easily manage your fuel station operations from anywhere,
             anytime.{" "}
           </p>
-        </div>
+        </section>
 
-        <div className="grid items-center grid-cols-1 mt-10 text-white lg:gap-8 lg:grid-cols-3">
+        <section className="grid items-center justify-center grid-cols-1 mt-10 text-white lg:gap-8 lg:grid-cols-3 ">
           {gridDiv.map((el) => {
             return (
               <div
-                className="my-8 text-center lg:my-20 lg:text-left"
+                className="my-8 text-center lg:my-20 lg:text-left "
                 key={el.title}
               >
                 <div className="flex justify-center lg:justify-start">
                   <img src={el.icon} alt={el.title} />
                 </div>
                 <h3 className="my-4 text-lg font-semibold">{el.title}</h3>
-                <p className="text-sm leading-normal w-[95%]">{el.desc}</p>
+                <p className="text-sm leading-normal ">{el.desc}</p>
               </div>
             );
           })}
-        </div>
+        </section>
 
-        <div className="flex flex-col items-center justify-between my-10 text-sm text-white lg:flex-row">
-          <div>
-            <h2 className="text-lg font-semibold text-center  lg:text-left lg:text-2xl">
+        <section className="flex flex-col items-center justify-between my-10 text-sm text-white lg:flex-row">
+          <section>
+            <h2 className="text-lg font-semibold text-center  lg:text-left lg:text-3xl font-satoshi">
               Simple Automation with <br /> no Downtime
             </h2>
-            <p className=" my-4 lg:leading-loose  text-center lg:text-left lg:w-[70%] w-[95%] mx-auto lg:ml-0 ">
+            <p className=" font-grotesk my-4 lg:leading-loose  text-center lg:text-left lg:w-[70%] w-[95%] mx-auto lg:ml-0 ">
               The following types of data can be gathered from the the Epump Go
               dashboard
             </p>
 
-            <ul className="mt-8 ml-4 list-disc">
+            <ul className="mt-8 ml-4 list-disc font-grotesk">
               <li>Remote Monitoring</li>
               <li className="my-4">Simple automation & zero downtime</li>
               <li>Remote Monitoring</li>
             </ul>
-          </div>
+          </section>
 
-          <div>
-            <img
-              src={feature}
-              alt="Product features"
-              className="h-[450px] w-full"
-            />
-          </div>
-        </div>
+          <section>
+            <img src={feature} alt="Product features" className=" w-full" />
+          </section>
+        </section>
       </section>
     </section>
   );

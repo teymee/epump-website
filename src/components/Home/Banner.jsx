@@ -27,7 +27,7 @@ export default function Banner() {
       <section
         className={`${widthStyle} py-8 flex flex-col  lg:flex-row justify-between  items-center `}
       >
-        <div>
+        <section className="">
           <div className="flex justify-center lg:justify-start">
             <div className="bg-purple100 w-[11rem] rounded-md py-2 text-center ">
               <p className="text-sm font-semibold text-purple600 font-satoshi">
@@ -52,13 +52,13 @@ export default function Banner() {
               </button>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div>
+        <section>
           <div>
             <HomeBanner />
           </div>
-        </div>
+        </section>
       </section>
     </section>
   );

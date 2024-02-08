@@ -48,7 +48,7 @@ export default function Navbar() {
 
             <div className="justify-between hidden text-sm lg:flex ">
               <NavLink
-                to="/pbout"
+                to="/about"
                 // onClick={(e) => insertAnimation(e, "/pbout")}
               >
                 <p className="mr-10 cursor-pointer">About</p>
